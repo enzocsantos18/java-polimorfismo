@@ -66,9 +66,9 @@ public class Conta {
     }
 
     public boolean transfere(double valor, Conta destino){
-        if (verificaSaldo(valor)) return false;
-
-        this.saldo -= valor;
+        if (!this.saca(valor)){
+            return  false;
+        }
         destino.deposita(valor);
 
         return true;
