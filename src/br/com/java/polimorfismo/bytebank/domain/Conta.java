@@ -1,6 +1,6 @@
 package br.com.java.polimorfismo.bytebank.domain;
 
-public class Conta {
+public abstract class Conta {
 
     private double saldo = 0;
     private int agencia;
