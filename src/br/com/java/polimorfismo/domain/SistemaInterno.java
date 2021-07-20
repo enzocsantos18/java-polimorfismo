@@ -13,6 +13,14 @@ public class SistemaInterno {
         }
 
         System.out.println("Pode entrar no sistema 😀");
+    }
 
+    public void autentica(Administrador a){
+        if (!a.autentica(this.senha)){
+            System.out.println("Não pode entrar no sistema");
+            return;
+        }
+
+        System.out.println("Pode entrar no sistema 😀");
     }
 }
