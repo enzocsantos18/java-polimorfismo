@@ -1,17 +1,23 @@
 package br.com.java.polimorfismo.domain;
 
+import br.com.java.polimorfismo.domain.utils.AutenticadorUtil;
+
 public class Gerente extends Funcionario implements IAutenticavel{
 
-    private Integer senha;
+    private AutenticadorUtil autenticador;
+
+    public Gerente() {
+        this.autenticador = new AutenticadorUtil();
+    }
 
     @Override
     public void setSenha(Integer senha) {
-        this.senha = senha;
+        autenticador.setSenha(senha);
     }
 
     @Override
     public boolean autentica(Integer senha) {
-        return this.senha.equals(senha);
+        return autenticador.autentica(senha);
     }
 
     public Double getBonificacao(){
