@@ -1,6 +1,6 @@
 package br.com.java.polimorfismo.domain;
 
-public class Gerente extends Funcionario implements IAutenticavel{
+public class Cliente implements IAutenticavel {
 
     private Integer senha;
 
@@ -13,9 +13,4 @@ public class Gerente extends Funcionario implements IAutenticavel{
     public boolean autentica(Integer senha) {
         return this.senha.equals(senha);
     }
-
-    public Double getBonificacao(){
-        return super.getSalario();
-    }
-
 }
