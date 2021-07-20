@@ -1,14 +1,11 @@
 package br.com.java.polimorfismo.domain;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private Double salario;
 
-
-    public Double getBonificacao(){
-        return this.salario * 0.1;
-    }
+    public abstract Double getBonificacao();
 
     public String getNome() {
         return nome;

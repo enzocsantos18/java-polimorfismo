@@ -14,11 +14,6 @@ public class TestaPolimorfismo {
         gerente.setCpf("123456789-11");
         gerente.setSalario(10000.00);
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Funcionario");
-        funcionario.setCpf("123456789-11");
-        funcionario.setSalario(1000.00);
-
         Diretor diretor = new Diretor();
         diretor.setNome("Diretor");
         diretor.setCpf("123456789-11");
@@ -27,7 +22,6 @@ public class TestaPolimorfismo {
 
         ControleBonificacao controleBonificacao = new ControleBonificacao();
         controleBonificacao.registra(diretor);
-        controleBonificacao.registra(funcionario);
         controleBonificacao.registra(gerente);
 
         System.out.println("O total gasto com bonificações foi de: " + controleBonificacao.getSoma());
