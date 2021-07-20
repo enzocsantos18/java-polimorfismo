@@ -1,4 +1,4 @@
-package br.com.java.polimorfismo;
+package br.com.java.polimorfismo.view;
 
 import br.com.java.polimorfismo.domain.ControleBonificacao;
 import br.com.java.polimorfismo.domain.Diretor;
